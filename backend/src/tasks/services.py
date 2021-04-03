@@ -64,7 +64,7 @@ def tasks_ready(self):
             return Response(status=400, data=error)
 
     results = Task.objects.all() if tasks else results
-    return Response(status=200, data=results)
+    return results
 
 
 def task_get(self):
